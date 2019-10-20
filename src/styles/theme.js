@@ -1,4 +1,5 @@
 const styles = {
+	primary: '#ffff00',
 	retroBlack: '#3B3B3B',
 	midGray: '#adadad',
 

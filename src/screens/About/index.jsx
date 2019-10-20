@@ -19,11 +19,8 @@ const Portfolio = (props) => {
 	return(
 		<Container>
 			<NavigationBar />
-			<BannerHeader title="My name is Brad and im a Front End Developer!"/>
-			<section id="port">
-				<FullHeading title="Projects"/>
-			</section>
-			{projects.map(i => <Project {...i} />)}
+			<BannerHeader title="about me."/>
+			<FullHeading title="ABout" />
 			<Footer />
 		</Container>
 	)

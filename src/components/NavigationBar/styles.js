@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Contianer = styled.div`
 	display: flex;
@@ -30,15 +32,26 @@ export const NavWrapper = styled.div`
 	align-items: center;
 `;
 
-export const LinkButton = styled.button`
+export const LinkButton = styled(AnchorLink)`
 	margin-left: 20px;
 	height: 50%;
 	width: 200px;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	border-radius: 50px;
+
+	&:hover {
+		background: ${props => props.theme.primary};;
+	}
 `;
 
 export const LinkText = styled.div`
 	font-size: 18px;
 	font-weight: 100;
 	color: ${props => props.theme.retroBlack};
+	border-bottom-width: 0px;
+	text-align: center;
 `;
 
