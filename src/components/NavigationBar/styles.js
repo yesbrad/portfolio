@@ -8,6 +8,7 @@ export const Contianer = styled.div`
 	height: 150px;
 	flex-direction: row;
 	padding: 0 20px;
+	/* position: absolute; */
 	/* border: 1px solid blue;	 */
 `;
 
@@ -21,7 +22,7 @@ export const LogoWrapper = styled.div`
 	display:flex;
 	height: 100%;
 	align-items: center;
-	color: ${props => props.theme.retroBlack};
+	color: white;
 `;
 
 export const NavWrapper = styled.div`
@@ -40,17 +41,17 @@ export const LinkButton = styled(AnchorLink)`
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	border-radius: 50px;
+	/* border-radius: 50px; */
 
 	&:hover {
-		background: ${props => props.theme.primary};;
+		border: 2px solid ${props => props.theme.primary};;
 	}
 `;
 
 export const LinkText = styled.div`
 	font-size: 18px;
 	font-weight: 100;
-	color: ${props => props.theme.retroBlack};
+	color: white;
 	border-bottom-width: 0px;
 	text-align: center;
 `;

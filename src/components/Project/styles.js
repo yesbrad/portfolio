@@ -17,6 +17,8 @@ export const ColumnWrapper = styled.div`
 	width: 100%;
 	height: 700px;
 	padding: 20px 0;
+	/* border: 1px solid; */
+
 `;
 
 export const InfoWrapper = styled.div`
@@ -41,9 +43,13 @@ export const BannerImage = styled.div`
 	display: flex;
 	width: 100%;
 	height: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;	
 	background-image: url(${props => props.image});
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
+		/* border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px; */
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		border-radius: 0;
@@ -51,6 +57,15 @@ export const BannerImage = styled.div`
 `;
 
 export const ButtonWrapper = styled.div`
-	width: 25%;
-	height: 100px;
+display: flex;
+	width: 50%;
+	height: 50px;
+	flex-direction: row;
+	/* border: 1px solid; */
+	justify-content: space-between;
+`;
+
+export const ProjectInfo = styled.div`
+		color: ${props => props.theme.retroBlack};;
+margin-top: 15px;
 `;

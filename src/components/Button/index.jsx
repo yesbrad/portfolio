@@ -4,11 +4,13 @@ import { Container, Text } from './styles';
 const Button = (props) => {
 	const {
 		title,
+		dark,
+		onClick,
 	} = props;
 
 	return (
-		<Container>
-			<Text>{title}</Text>
+		<Container onClick={onClick} dark={dark}>
+			<Text dark={dark}>{title}</Text>
 		</Container>
 	)
 };

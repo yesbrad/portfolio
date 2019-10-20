@@ -5,25 +5,27 @@ export const Contianer = styled.div`
 	width: 100%;
 	height: 600px;
 	flex-direction: column;
+	overflow: hidden;
+	position: relative;
+`;
+
+export const Wrapper = styled.div`
+	display: flex;
+	height: 100%;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 `;
 
-export const ContianerBackSkew = styled.div`
+export const BgImage = styled.img`
 	position: absolute;
 	width: 100%;
-	height: 600px;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: ${props => props.theme.retroBlack};
-	/* transform: skewY(-1deg); */
-	z-index: -1;
+	z-index: -3;
 `;
 
 export const TitleWrapper = styled.div`
 	text-align: center;
-	font-size: 54px;
+	font-size: 40px;
 	font-weight: 700;
 	width: 40%;
 	color:white;
