@@ -10,10 +10,13 @@ import Contact from '../../components/Contact';
 
 const projects = [
 	{
-		title: 'Bub: Prenancy Companion',
+		title: 'Bub: Pregnancy Companion',
 		miniDesc: 'React Native project made in a short time frame',
 		image: require('../../Images/BubMock.png'),
-		url: 'https://apps.apple.com/au/app/bub-pregnancy-companion/id1468448524'
+		url: 'https://apps.apple.com/au/app/bub-pregnancy-companion/id1468448524',
+		info: `
+			'BUB - Pregnancy Companion' was made in React native in a short time frame. I was in charge of implementing core screens and fuctionality. The project had it's challenges such as an inbuilt Forum, PDF Exporting and Ovulation Tracker. After release I worked on numous updates providing new features and bug fixing. If you have anymore questions feel free to send me a message below!
+		`
 	}
 ];
 

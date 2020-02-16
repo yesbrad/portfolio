@@ -8,6 +8,11 @@ export const Contianer = styled.div`
 	justify-content: center;
 	height: 500px;
 	background: ${props => props.theme.retroBlack};
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		flex-direction: column;
+		height: 800px;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -34,8 +39,11 @@ export const TitleWrapper = styled.div`
 	font-weight: 700;
 	width: 100%;
 	color: white;
+	max-width: 400px;
 `;
 
 export const InfoText = styled.div`
 		color: white;
+		max-width: 400px;
+		/* border: 1px solid; */
 `;

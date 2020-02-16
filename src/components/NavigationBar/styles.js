@@ -17,12 +17,16 @@ export const RowWrapper = styled.div`
 `;
 
 export const LogoWrapper = styled.div`
-	font-size: 32px;
+	font-size: 42px;
 	font-weight: 900;
 	display:flex;
 	height: 100%;
 	align-items: center;
 	color: white;
+
+	/* @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		font-size: 60px;
+	} */
 `;
 
 export const NavWrapper = styled.div`
@@ -31,6 +35,10 @@ export const NavWrapper = styled.div`
 	/* border: 1px solid red; */
 	justify-content: flex-end;
 	align-items: center;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		display: none;
+	}
 `;
 
 export const LinkButton = styled(AnchorLink)`

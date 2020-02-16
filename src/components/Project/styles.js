@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {useSpring, animated} from 'react-spring'
 
 export const Contianer = styled.div`
 	display: flex;
@@ -18,13 +19,19 @@ export const ColumnWrapper = styled.div`
 	height: 700px;
 	padding: 20px 0;
 	/* border: 1px solid; */
-
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		height: 500px;
+	}
 `;
 
 export const InfoWrapper = styled.div`
 	width: 100%;
 	height: 100%;
 	padding: 100px;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		padding: 50px;
+	}
 `;
 
 export const TitleWrapper = styled.div`
@@ -58,14 +65,13 @@ export const BannerImage = styled.div`
 
 export const ButtonWrapper = styled.div`
 display: flex;
-	width: 50%;
 	height: 50px;
 	flex-direction: row;
 	/* border: 1px solid; */
-	justify-content: space-between;
 `;
 
-export const ProjectInfo = styled.div`
-		color: ${props => props.theme.retroBlack};;
-margin-top: 15px;
+export const ProjectInfo = styled(animated.div)`
+	color: ${props => props.theme.retroBlack};;
+	margin-top: 15px;
+	max-width: 500px;
 `;

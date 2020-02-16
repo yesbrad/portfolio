@@ -8,6 +8,11 @@ export const Contianer = styled.div`
 	align-items: center;
 	justify-content: center;
 	height: 500px;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		flex-direction: column;
+		height: 800px;
+	}
 `;
 
 export const Wrapper = styled.div`
@@ -20,6 +25,10 @@ export const Wrapper = styled.div`
 
 	align-items: center;
 	justify-content: center;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		padding: 20px 40px;
+	}
 `;
 
 export const TitleWrapper = styled.div`

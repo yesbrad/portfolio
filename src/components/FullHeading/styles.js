@@ -6,6 +6,7 @@ export const Contianer = styled.div`
 	flex-direction: column;
 	padding: 40px;
 	/* align-items: center; */
+	/* border:1px solid; */
 `;
 
 export const TitleWrapper = styled.div`
