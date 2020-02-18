@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Contianer, TitleWrapper, BannerImage, MiniDescription, ColumnWrapper, InfoWrapper, ButtonWrapper, ProjectInfo } from './styles';
+import { Contianer, TitleWrapper, BannerImage, MiniDescription, ColumnWrapper, InfoWrapper, ButtonWrapper, ProjectInfo, PortfolioHeading } from './styles';
 import Button from '../Button';
 import {useSpring, animated} from 'react-spring'
 
@@ -9,7 +9,9 @@ const Project = (props) => {
 		image,
 		miniDesc,
 		url,
-		info
+		info,
+		swapped,
+		titlePort
 	} = props;
 
 	const [isOpen, setOpen] = useState(false);
@@ -20,22 +22,23 @@ const Project = (props) => {
 
 	return (
 		<Contianer>
+			{swapped && <ColumnWrapper>
+				<BannerImage image={image} />
+			</ColumnWrapper>}
 			<ColumnWrapper>
-				<InfoWrapper>
+				{titlePort && <PortfolioHeading>Portfolio</PortfolioHeading>}
+				<InfoWrapper titlePort={titlePort}>
 					<TitleWrapper>{title}</TitleWrapper>
-					<MiniDescription>{miniDesc}</MiniDescription>
+					<MiniDescription>{info}</MiniDescription>
 					<ButtonWrapper>
 						<Button title="More Info" onClick={() => setOpen(!isOpen)}/>
-						<Button title="App Store" onClick={() => window.open(url)} dark />
+						<Button title="App Store" onClick={() => window.open(url)} />
 					</ButtonWrapper>
-					<ProjectInfo style={sproing}>
-						{info}
-					</ProjectInfo>
 				</InfoWrapper>	
 			</ColumnWrapper>
-			<ColumnWrapper>
+			{!swapped && <ColumnWrapper>
 				<BannerImage image={image} />
-			</ColumnWrapper>
+			</ColumnWrapper>}
 		</Contianer>
 	);
 };

@@ -1,28 +1,32 @@
 import styled from 'styled-components';
+import theme from '../../styles/theme';
 
 export const Contianer = styled.div`
-	display: flex;
 	width: 100%;
-	height: 600px;
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-
-	background-image: url('../../Images/HOSIER-LANE-2.jpg');
+	padding: 3em;
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		height: 300px;
-		back
 	}
 `;
 
-export const Wrapper = styled.div`
-	display: flex;
+export const PanelWrapper = styled.div`
+	background: linear-gradient(#7F00FF, #E100FF);
+	border-radius: 40px;
 	height: 100%;
+	/* border: 1px solid blue;	 */
+`;
+
+export const Wrapper = styled.div`
+	/* border: 1px solid blue;	 */
+	display: flex;
+	padding: 30px;
+	height: 500px;
+	overflow: auto;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-end;
-	padding: 30px;
+	/* padding: 30px; */
 `;
 
 export const BgImage = styled.img`
@@ -37,7 +41,6 @@ export const TitleWrapper = styled.div`
 	text-align: right;
 	font-size: ${props => props.size}px;
 	font-weight: 700;
-	width: 100%;
 	color:white;
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {

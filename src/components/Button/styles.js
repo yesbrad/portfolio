@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.button`
 	height: 45px;
 	min-width: 150px;
-	background: ${props => props.theme.primary};
+	background: white;
 	/* background: ${props => props.theme.dark ? props.theme.dark : props.theme.primary} */
 	/* border-radius: 500px; */
 	align-items: center;
@@ -11,6 +11,8 @@ export const Container = styled.button`
 	display: flex;
 	transition: background 300ms ease-in-out;
 	/* transition: transform  300ms ease-in-out; */
+	border-radius: 30px;
+	margin-right: 10px;
 
   &:hover {
     /* transform: scale(1.1); */

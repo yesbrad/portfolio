@@ -7,9 +7,9 @@ export const Contianer = styled.div`
 	width: 100%;
 	height: 150px;
 	flex-direction: row;
-	padding: 0 20px;
+	padding: 0 30px;
 	/* position: absolute; */
-	/* border: 1px solid blue;	 */
+	/* border: 1px solid green;	 */
 `;
 
 export const RowWrapper = styled.div`
