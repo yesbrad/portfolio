@@ -1,5 +1,5 @@
 import React from 'react'
-import { Contianer, TitleWrapper, RowWrapper, ColumnWrapper, Title, DesciptionLink, Copyright } from './styles';
+import { Contianer, TitleWrapper, RowWrapper, ColumnWrapper, Title, DesciptionLink, Copyright, InnerContainer } from './styles';
 
 const Footer = (props) => {
 	const {
@@ -14,30 +14,32 @@ const Footer = (props) => {
 
 	return (
 		<Contianer>
-			<RowWrapper>
-				<ColumnWrapper>
-					<Title>FOLLOW ME</Title>
-					<DesciptionLink onClick={() => window.open(Links.twitter)}>Twitter</DesciptionLink>
-					<DesciptionLink onClick={() => window.open(Links.linkdin)}>Linkdin</DesciptionLink>
-					<DesciptionLink onClick={() => window.open(Links.github)}>Git Hub</DesciptionLink>
-				</ColumnWrapper>
-				<ColumnWrapper>
-					<Title>CONTACT ME</Title>
-					<DesciptionLink>b.bradfrancis@gmail.com</DesciptionLink>
-					<DesciptionLink onClick={() => window.open(Links.twitter)}	>@bradles36</DesciptionLink>
-				</ColumnWrapper>
-			</RowWrapper>
-			<RowWrapper>
-				<ColumnWrapper>
-					<Title>USEFUL LINKS</Title>
-					<DesciptionLink href="#port">PORTFOLIO</DesciptionLink>
-					<DesciptionLink href="#about">ABOUT ME</DesciptionLink>
-					<DesciptionLink href="#contact">CONTACT ME</DesciptionLink>
-				</ColumnWrapper>
-				<ColumnWrapper end>
-					<Copyright>Copyright © Brad Francis 2019</Copyright>
-				</ColumnWrapper>
-			</RowWrapper>
+			<InnerContainer>
+				<RowWrapper>
+					<ColumnWrapper>
+						<Title>FOLLOW ME</Title>
+						<DesciptionLink onClick={() => window.open(Links.twitter)}>Twitter</DesciptionLink>
+						<DesciptionLink onClick={() => window.open(Links.linkdin)}>Linkdin</DesciptionLink>
+						<DesciptionLink onClick={() => window.open(Links.github)}>Git Hub</DesciptionLink>
+					</ColumnWrapper>
+					<ColumnWrapper>
+						<Title>CONTACT ME</Title>
+						<DesciptionLink>b.bradfrancis@gmail.com</DesciptionLink>
+						<DesciptionLink onClick={() => window.open(Links.twitter)}	>@bradles36</DesciptionLink>
+					</ColumnWrapper>
+				</RowWrapper>
+				<RowWrapper>
+					<ColumnWrapper>
+						<Title>USEFUL LINKS</Title>
+						<DesciptionLink href="#port">PORTFOLIO</DesciptionLink>
+						<DesciptionLink href="#about">ABOUT ME</DesciptionLink>
+						<DesciptionLink href="#contact">CONTACT ME</DesciptionLink>
+					</ColumnWrapper>
+					<ColumnWrapper end>
+						<Copyright>Copyright © Brad Francis 2020</Copyright>
+					</ColumnWrapper>
+				</RowWrapper>
+			</InnerContainer>
 		</Contianer>
 	);
 };

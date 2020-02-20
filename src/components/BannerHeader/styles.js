@@ -4,15 +4,13 @@ import theme from '../../styles/theme';
 export const Contianer = styled.div`
 	width: 100%;
 	padding: 3em;
-
-	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-		height: 300px;
-	}
+	padding-top: 0px;
 `;
 
 export const PanelWrapper = styled.div`
 	background: linear-gradient(#7F00FF, #E100FF);
-	border-radius: 40px;
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
 	height: 100%;
 	/* border: 1px solid blue;	 */
 `;
@@ -20,8 +18,8 @@ export const PanelWrapper = styled.div`
 export const Wrapper = styled.div`
 	/* border: 1px solid blue;	 */
 	display: flex;
-	padding: 30px;
-	height: 500px;
+	padding: 30px 60px;
+	height: 300px;
 	overflow: auto;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -42,6 +40,10 @@ export const TitleWrapper = styled.div`
 	font-size: ${props => props.size}px;
 	font-weight: 700;
 	color:white;
+
+	${props => props.small && `
+		font-weight: 350;
+	`};
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		font-size: 20px;

@@ -46,6 +46,7 @@ const Contact = (props) => {
 			setSuccess(true);
 			console.log('Email Sent!')
 		} catch (err) {
+			setError(false);
 			console.log('We Broke', err);
 		}
 

@@ -2,16 +2,26 @@ import styled from 'styled-components';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 export const Contianer = styled.div`
-	display: flex;
 	height: 400px;
-	width: 100%;
-	flex-direction: row;
-	background: ${props => props.theme.retroBlack};
-	/* align-items: center; */
+
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		flex-direction: column;
 		height: 700px;
 	}
+
+	padding: 3em;
+	padding-bottom: 0px;
+`;
+
+export const InnerContainer = styled.div`
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	background: ${props => props.theme.retroBlack};
+	height: 100%;
+	width: 100%;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 `;
 
 export const RowWrapper = styled.div`
@@ -66,6 +76,6 @@ justify-self:flex-end;
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		align-self: flex-start;
-justify-self:flex-start;
+		justify-self:flex-start;
 	}
 `;

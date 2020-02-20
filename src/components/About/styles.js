@@ -1,17 +1,24 @@
 import styled from 'styled-components';
 
 export const Contianer = styled.div`
-	display: flex;
 	width: 100%;
+	padding: 3em;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		height: 800px;
+	}
+`;
+
+export const InnerContainer = styled.div`
+	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	height: 500px;
 	background: ${props => props.theme.retroBlack};
+	border-radius: 30px;
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		flex-direction: column;
-		height: 800px;
 	}
 `;
 
@@ -22,7 +29,7 @@ export const Wrapper = styled.div`
 	/* border: 1px solid; */
 	flex-direction: column;
 	padding: 20px 80px;
-
+	margin: 50px 0;
 	align-items: center;
 	justify-content: center;
 `;

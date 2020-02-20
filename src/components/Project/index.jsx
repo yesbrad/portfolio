@@ -11,7 +11,8 @@ const Project = (props) => {
 		url,
 		info,
 		swapped,
-		titlePort
+		titlePort,
+		second
 	} = props;
 
 	const [isOpen, setOpen] = useState(false);
@@ -23,11 +24,11 @@ const Project = (props) => {
 	return (
 		<Contianer>
 			{swapped && <ColumnWrapper>
-				<BannerImage image={image} />
+				<BannerImage image={image}  isOpen={isOpen}/>
 			</ColumnWrapper>}
 			<ColumnWrapper>
 				{titlePort && <PortfolioHeading>Portfolio</PortfolioHeading>}
-				<InfoWrapper titlePort={titlePort}>
+				<InfoWrapper titlePort={titlePort} second={second}>
 					<TitleWrapper>{title}</TitleWrapper>
 					<MiniDescription>{info}</MiniDescription>
 					<ButtonWrapper>
@@ -37,7 +38,15 @@ const Project = (props) => {
 				</InfoWrapper>	
 			</ColumnWrapper>
 			{!swapped && <ColumnWrapper>
-				<BannerImage image={image} />
+				{/* <InfoWrapper titlePort={titlePort} second={second}>
+					<TitleWrapper>{title}</TitleWrapper>
+					<MiniDescription>{info}</MiniDescription>
+					<ButtonWrapper>
+						<Button title="More Info" onClick={() => setOpen(!isOpen)}/>
+						<Button title="App Store" onClick={() => window.open(url)} />
+					</ButtonWrapper>
+				</InfoWrapper> */}
+				<BannerImage image={image} isOpen={isOpen}/>
 			</ColumnWrapper>}
 		</Contianer>
 	);

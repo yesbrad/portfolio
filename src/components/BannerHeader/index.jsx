@@ -13,11 +13,10 @@ const BannerHeader = (props) => {
 	return (
 		<Contianer>
 			<PanelWrapper>
-
 				<NavigationBar />
 				<Wrapper>
 					<TitleWrapper size={30}>Software Enginneer</TitleWrapper>
-					<TitleWrapper size={20}>Melbourne, Australia</TitleWrapper>
+					<TitleWrapper small size={20}>Melbourne, Australia</TitleWrapper>
 				</Wrapper>
 			</PanelWrapper>
 		</Contianer>

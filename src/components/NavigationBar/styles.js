@@ -7,7 +7,7 @@ export const Contianer = styled.div`
 	width: 100%;
 	height: 150px;
 	flex-direction: row;
-	padding: 0 30px;
+	padding: 0 60px 0 60px;
 	/* position: absolute; */
 	/* border: 1px solid green;	 */
 `;
@@ -42,25 +42,29 @@ export const NavWrapper = styled.div`
 `;
 
 export const LinkButton = styled(AnchorLink)`
-	margin-left: 20px;
+	margin-left: 100px;
 	height: 50%;
-	width: 200px;
+	/* width: 200px; */
 	text-decoration: none;
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	/* border-radius: 50px; */
+	border-radius: 50px;
+	padding: 0px 30px;
+	color: white;
 
 	&:hover {
-		border: 2px solid ${props => props.theme.primary};;
+		/* border: 2px solid ${props => props.theme.primary};; */
+		background: white;
+		color: black;
 	}
 `;
 
 export const LinkText = styled.div`
 	font-size: 18px;
 	font-weight: 100;
-	color: white;
 	border-bottom-width: 0px;
 	text-align: center;
+	color:inherit;
 `;
 

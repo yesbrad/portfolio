@@ -20,6 +20,8 @@ export const ColumnWrapper = styled.div`
 	width: 100%;
 	/* height: 700px; */
 	padding: 3em;
+	/* flex: 1; */
+	
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		height: 500px;
@@ -40,6 +42,10 @@ export const InfoWrapper = styled.div`
 	
 	${props => props.titlePort && `
 		margin-top: 20px;
+	`};
+
+	${props => props.second && `
+		background: linear-gradient(#ABFF00, #00EF60);
 	`};
 	
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
@@ -71,6 +77,12 @@ export const BannerImage = styled.div`
 	background-image: url(${props => props.image});	
 	border-radius: 50px;
 	overflow: hidden;
+	clip-path: circle(140.9% at 0 100%);
+	transition: clip-path 1s;
+
+	${props => props.isOpen && `
+		clip-path: circle(0% at 0 100%);
+	`};
 `;
 
 export const ButtonWrapper = styled.div`
@@ -91,7 +103,7 @@ export const ProjectInfo = styled(animated.div)`
 
 export const PortfolioHeading = styled.span`
 	font-size: 65px;
-	border: 1px solid;
+	/* border: 1px solid; */
 	font-weight: 900;
 	color: #444;
 `;
