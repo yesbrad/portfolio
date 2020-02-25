@@ -9,15 +9,17 @@ export const Container = styled.button`
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	transition: background 300ms ease-in-out;
-	/* transition: transform  300ms ease-in-out; */
+	/* transition: background 300ms ease-in-out; */
+	transition: transform  200ms ease-in-out, background 300ms ease-in-out, color 200ms;;
 	border-radius: 30px;
 	margin-right: 10px;
+    transform: scale(1);
+	color: ${props => props.theme.retroBlack};;
 
   &:hover {
-    /* transform: scale(1.1); */
-
-		background: turquoise;
+    transform: scale(1.05);
+		color: white;
+		background: ${props => props.theme.retroBlack};
 
 		${props => props.dark && `
 			background: gray;
@@ -30,9 +32,5 @@ export const Container = styled.button`
 `;
 
 export const Text = styled.div`
-	color: ${props => props.theme.retroBlack};;
-
-	${props => props.dark && `
-		color: white;
-	`};
+	color: inherit;
 `;

@@ -43,7 +43,7 @@ export const NavWrapper = styled.div`
 
 export const LinkButton = styled(AnchorLink)`
 	margin-left: 100px;
-	height: 50%;
+	height: 30%;
 	/* width: 200px; */
 	text-decoration: none;
 	justify-content: center;
@@ -52,6 +52,7 @@ export const LinkButton = styled(AnchorLink)`
 	border-radius: 50px;
 	padding: 0px 30px;
 	color: white;
+	transition: background 200ms, color 200ms;
 
 	&:hover {
 		/* border: 2px solid ${props => props.theme.primary};; */

@@ -15,7 +15,7 @@ const BannerHeader = (props) => {
 			<PanelWrapper>
 				<NavigationBar />
 				<Wrapper>
-					<TitleWrapper size={30}>Software Enginneer</TitleWrapper>
+					<TitleWrapper size={30}>React Native/React Developer</TitleWrapper>
 					<TitleWrapper small size={20}>Melbourne, Australia</TitleWrapper>
 				</Wrapper>
 			</PanelWrapper>
