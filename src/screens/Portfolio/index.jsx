@@ -35,7 +35,7 @@ const projects = [
             "The project involved taking use of NETO developer endpoints to make a project that helped print in store price tickets. This improved the old printing system by saving days of work. Because it is real time with the database and its also available to all workers phones that can get updates immediately.",
             "The Project took advantage of the React Native Camera package that detects barcodes in seconds. Then hands that of into the NETO database. If you have anymore questions send me a message!"
         ],
-        gitHub: "https://github.com/yesbrad",
+        gitHub: "https://github.com/yesbrad/awardticketscanner",
         swapped: true,
         second: true
     }

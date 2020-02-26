@@ -9,8 +9,6 @@ import {
 } from "./styles";
 
 const About = props => {
-    const { title } = props;
-
     return (
         <Contianer>
             <InnerContainer>
