@@ -1,16 +1,16 @@
 const styles = {
-	primary: '#ffff00',
+    primary: "#ffff00",
 
-	gBlue: {
-		top: 'red',
-		bottom: 'yellow',
-	},
+    gBlue: {
+        top: "red",
+        bottom: "yellow"
+    },
 
-	retroBlack: '#3B3B3B',
-	midGray: '#adadad',
+    retroBlack: "#3B3B3B",
+    midGray: "#adadad",
 
-	mobileWidth: 900,
-	padWidth: 1300,
-}
+    mobileWidth: 900,
+    padWidth: 1300
+};
 
 export default styles;

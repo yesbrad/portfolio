@@ -1,9 +1,9 @@
 .route-wrapper {
-	position: relative;
-	min-width: 100%;
+    position: relative;
+    min-width: 100%;
 }
 
 .route-wrapper > div {
-	position: absolute;
-	width: 100%;
+    position: absolute;
+    width: 100%;
 }

@@ -1,10 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.button`
 	height: 45px;
 	min-width: 150px;
 	background: white;
-	/* background: ${props => props.theme.dark ? props.theme.dark : props.theme.primary} */
+	/* background: ${props =>
+        props.theme.dark ? props.theme.dark : props.theme.primary} */
 	/* border-radius: 500px; */
 	align-items: center;
 	justify-content: center;
@@ -21,16 +22,20 @@ export const Container = styled.button`
 		color: white;
 		background: ${props => props.theme.retroBlack};
 
-		${props => props.dark && `
+		${props =>
+            props.dark &&
+            `
 			background: gray;
 		`};
   }
 
-	${props => props.dark && `
+	${props =>
+        props.dark &&
+        `
 		background: ${props.theme.retroBlack};
 	`};
 `;
 
 export const Text = styled.div`
-	color: inherit;
+    color: inherit;
 `;
