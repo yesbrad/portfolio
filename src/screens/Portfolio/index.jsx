@@ -13,7 +13,7 @@ const projects = [
 	{
 		title: 'Bub: Pregnancy Companion',
 		miniDesc: "'BUB - Pregnancy Companion' was made in React Native in a short time frame for Netflix star Lorinska Merrington. ",
-		image: require('../../Images/bubSHop2.png'),
+		image: require('../../Images/bubSHop2.jpg'),
 		url: 'https://apps.apple.com/au/app/bub-pregnancy-companion/id1468448524',
 		info: [
 			"'BUB - Pregnancy Companion' was made in React Native in a short time frame for Netflix star Lorinska Merrington. ",
@@ -26,7 +26,7 @@ const projects = [
 	{
 		title: 'Award RV Scanner',
 		miniDesc: 'The Award Ticket Scanner is a NETO integrated enterprise app made for Award RV SuperStore to help with sale ticket printing.',
-		image: require('../../Images/AwardShop.png'),
+		image: require('../../Images/AwardShop.jpg'),
 		info: [
 			'The Award Ticket Scanner is a NETO integrated enterprise app made for Award RV Super Store.',
 			'The project involved taking use of NETO developer endpoints to make a project that helped print in store price tickets. This improved the old printing system by saving days of work. Because it is real time with the database and its also available to all workers phones that can get updates immediately.',

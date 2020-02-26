@@ -4,9 +4,9 @@ export const Contianer = styled.div`
 	width: 100%;
 	padding: 3em;
 
-	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+	/* @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		height: 800px;
-	}
+	} */
 `;
 
 export const InnerContainer = styled.div`

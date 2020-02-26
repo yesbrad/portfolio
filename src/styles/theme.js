@@ -10,6 +10,7 @@ const styles = {
 	midGray: '#adadad',
 
 	mobileWidth: 900,
+	padWidth: 1300,
 }
 
 export default styles;

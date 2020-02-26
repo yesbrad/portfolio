@@ -18,7 +18,7 @@ export const Contianer = styled.div`
 
 export const ColumnWrapper = styled.div`
 	width: 100%;
-	/* height: 700px; */
+	/* height: 900px; */
 	padding: 3em;
 
 	${props => props.double && `
@@ -27,7 +27,8 @@ export const ColumnWrapper = styled.div`
 
 
 	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-		height: 500px;
+		/* height: 800px; */
+		width: 100%;
 	}
 
 	/* border: 1px solid; */
@@ -70,38 +71,11 @@ export const MiniDescription = styled.div`
 	color: white;
 `;
 
-export const BannerImage = styled.div`
-	display: flex;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	/* background-size: 90%;	 */
-	background-image: url(${props => props.image});	
-	border-radius: 50px;
-	overflow: hidden;
-`;
-
 export const ButtonWrapper = styled.div`
 	display: flex;
-	height: 50px;
+	height: 100%;
 	flex-direction: row;
 	margin-top: 100px;
-	/* align-items: flex-end */
+	align-items: flex-end;
 	justify-content: flex-end;
-	/* border: 1px solid; */
-`;
-
-export const ProjectInfo = styled(animated.div)`
-	color: ${props => props.theme.retroBlack};;
-	margin-top: 15px;
-	max-width: 500px;
-`;
-
-export const PortfolioHeading = styled.span`
-	font-size: 65px;
-	/* border: 1px solid; */
-	font-weight: 900;
-	color: #444;
 `;

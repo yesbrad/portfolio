@@ -9,7 +9,7 @@ export const Contianer = styled.div`
 	justify-content: center;
 	/* height: 500px; */
 	/* border: 1px solid; */
-	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+	@media screen and (max-width: ${props => props.theme.padWidth}px) {
 		flex-direction: column;
 		/* height: 800px; */
 	}
