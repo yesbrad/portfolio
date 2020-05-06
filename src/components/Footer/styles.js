@@ -2,11 +2,11 @@ import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Contianer = styled.div`
-    height: 400px;
+    height: 350px;
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         flex-direction: column;
-        height: 700px;
+        height: 550px;
     }
 
     padding: 3em;
@@ -22,14 +22,17 @@ export const InnerContainer = styled.div`
     width: 100%;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+	padding: 50px;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		flex-direction: column;
+    }
 `;
 
 export const RowWrapper = styled.div`
     display: flex;
     width: 100%;
-    /* border: 1px solid green; */
     flex-direction: column;
-    padding: 60px;
 `;
 
 export const ColumnWrapper = styled.div`
@@ -45,6 +48,7 @@ export const ColumnWrapper = styled.div`
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         margin-bottom: 20px;
+		align-items: center;
     }
 `;
 
@@ -69,13 +73,12 @@ export const DesciptionLink = styled.a`
 export const Copyright = styled.div`
     align-self: flex-end;
     justify-self: flex-end;
-    /* b	order: 1px solid green; */
     color: ${props => props.theme.midGray};
     margin: 5px 0;
     font-weight: 100;
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        align-self: flex-start;
-        justify-self: flex-start;
+        align-self: center;
+        justify-self: center;
     }
 `;

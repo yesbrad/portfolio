@@ -49,7 +49,7 @@ const Project = props => {
     );
 
     return (
-        <Contianer>
+        <Contianer swapped={!swapped}>
             {swapped && renderBannerInfo()}
             <ColumnWrapper>
                 {titlePort && <PortfolioHeading>Portfolio</PortfolioHeading>}

@@ -9,8 +9,8 @@ const styles = {
     retroBlack: "#3B3B3B",
     midGray: "#adadad",
 
-    mobileWidth: 900,
-    padWidth: 1300
+    mobileWidth: 940,
+    padWidth: 1500
 };
 
 export default styles;

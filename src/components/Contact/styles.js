@@ -4,37 +4,41 @@ export const Contianer = styled.div`
     display: flex;
     width: 100%;
     flex-direction: row;
-    padding: 40px;
     align-items: center;
     justify-content: center;
-    /* height: 500px; */
-    /* border: 1px solid; */
+    background: linear-gradient(#ff512f, #dd2476);
+    border-radius: 30px;
+    padding: 50px;
+
     @media screen and (max-width: ${props => props.theme.padWidth}px) {
         flex-direction: column;
-        /* height: 800px; */
     }
 `;
 
 export const Wrapper = styled.div`
     display: flex;
-    width: 100%;
+    min-width: 50%;
     height: 100%;
-    /* border: 1px solid; */
     flex-direction: column;
     padding: 20px 80px;
-
     align-items: center;
     justify-content: center;
 
+    @media screen and (max-width: ${props => props.theme.padWidth}px) {
+		min-width: 100%;
+    }
+
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        padding: 20px 40px;
+        padding: 20px 5px;
     }
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 54px;
+    font-size: 44px;
     font-weight: 700;
     color: white;
+	white-space: nowrap;
+	overflow: hidden;
 `;
 
 export const InfoText = styled.div``;

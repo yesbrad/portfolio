@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
     height: 100%;
     /* border: 1px solid; */
     flex-direction: column;
-    padding: 20px 80px;
+    padding: 20px 40px;
     margin: 50px 0;
     align-items: center;
     justify-content: center;
@@ -39,18 +39,29 @@ export const Image = styled.img`
     height: 300px;
     border-radius: 200px;
     border: 20px solid white;
+
+	@media screen and (max-width: ${props => props.theme.padWidth}px) {
+		width: 250px;
+    	height: 250px;
+    }
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 54px;
+    font-size: 44px;
     font-weight: 700;
     width: 100%;
     color: white;
-    max-width: 400px;
+	
+	@media screen and (min-width: ${props => props.theme.padWidth}px) {
+		max-width: 500px;
+    }
 `;
 
 export const InfoText = styled.div`
     color: white;
-    max-width: 400px;
     /* border: 1px solid; */
+
+	@media screen and (min-width: ${props => props.theme.padWidth}px) {
+		max-width: 500px;
+    }
 `;

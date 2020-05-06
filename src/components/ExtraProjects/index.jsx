@@ -6,10 +6,8 @@ import {
     ColumnWrapper,
     InfoWrapper,
     ButtonWrapper,
-    ProjectInfo
 } from "./styles";
 import Button from "../Button";
-import { useSpring, animated } from "react-spring";
 import Contact from "../Contact";
 
 const ExtraProjects = props => {
@@ -34,9 +32,7 @@ const ExtraProjects = props => {
                 </InfoWrapper>
             </ColumnWrapper>
             <ColumnWrapper double>
-                <InfoWrapper>
-                    <Contact></Contact>
-                </InfoWrapper>
+                <Contact></Contact>
             </ColumnWrapper>
         </Contianer>
     );

@@ -1,14 +1,10 @@
 import styled from "styled-components";
-import { useSpring, animated } from "react-spring";
 
 export const Contianer = styled.div`
     display: flex;
     width: 100%;
     flex-direction: row;
     height: auto;
-    /* align-items: center; */
-
-    /* padding: 30px 50px; */
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         border-radius: 0;
@@ -18,7 +14,6 @@ export const Contianer = styled.div`
 
 export const ColumnWrapper = styled.div`
     width: 100%;
-    /* height: 900px; */
     padding: 3em;
 
     ${props =>
@@ -28,11 +23,9 @@ export const ColumnWrapper = styled.div`
 	`};
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        /* height: 800px; */
         width: 100%;
     }
 
-    /* border: 1px solid; */
 `;
 
 export const InfoWrapper = styled.div`
@@ -45,18 +38,6 @@ export const InfoWrapper = styled.div`
     border-radius: 30px;
     background: linear-gradient(#ff512f, #dd2476);
 
-    ${props =>
-        props.titlePort &&
-        `
-		margin-top: 20px;
-	`};
-
-    ${props =>
-        props.second &&
-        `
-		background: linear-gradient(#ABFF00, #00EF60);
-	`};
-
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         padding: 50px;
     }
@@ -66,6 +47,7 @@ export const TitleWrapper = styled.div`
     font-size: 44px;
     font-weight: 700;
     color: white;
+	white-space: nowrap;
 `;
 
 export const MiniDescription = styled.div`

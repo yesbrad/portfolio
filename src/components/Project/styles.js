@@ -9,7 +9,7 @@ export const Contianer = styled.div`
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         border-radius: 0;
-        flex-direction: column;
+        flex-direction: ${props => props.swapped ? 'column' : 'column-reverse'};
     }
 `;
 
