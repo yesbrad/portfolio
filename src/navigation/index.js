@@ -1,6 +1,5 @@
 import React from "react";
 import Portfolio from "../screens/Portfolio";
-import About from "../screens/About";
 import { BrowserRouter, Route } from "react-router-dom";
 import { spring, AnimatedSwitch } from "react-router-transition";
 import "./styles.css";
@@ -48,7 +47,6 @@ const Navigation = () => {
                 className="route-wrapper"
             >
                 <Route exact path="/" component={Portfolio} />
-                <Route exact path="/about" component={About} />
             </AnimatedSwitch>
         </BrowserRouter>
     );

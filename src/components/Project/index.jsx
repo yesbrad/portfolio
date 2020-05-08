@@ -13,7 +13,6 @@ import {
     HeadingWrapper
 } from "./styles";
 import Button from "../Button";
-import { useSpring, animated } from "react-spring";
 
 const Project = props => {
     const {
@@ -29,10 +28,6 @@ const Project = props => {
     } = props;
 
     const [isOpen, setOpen] = useState(false);
-
-    const sproing = useSpring({
-        opacity: isOpen ? 1 : 0
-    });
 
     const renderBannerInfo = () => (
         <ColumnWrapper>
@@ -51,7 +46,7 @@ const Project = props => {
     return (
         <Contianer swapped={!swapped}>
             {swapped && renderBannerInfo()}
-            <ColumnWrapper>
+            <ColumnWrapper main>
                 {titlePort && <PortfolioHeading>Portfolio</PortfolioHeading>}
                 <InfoWrapper titlePort={titlePort} second={second}>
                     <TitleWrapper>{title}</TitleWrapper>

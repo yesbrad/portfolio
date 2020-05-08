@@ -18,15 +18,10 @@ const About = props => {
                 <Wrapper>
                     <TitleWrapper>About Me</TitleWrapper>
                     <InfoText>
-                        Hello! My name is Brad and from Melbourne, Australia.
-                        I'm a fresh React Native/React developer and
-                        professional game developer. I worked as a Software
-                        Engineer at a local company for just under 2 years. With
-                        recently moving to React Development in the past year. I
-                        enjoy other things other than development. Like fishing,
-                        snowboarding, traveling and Friday socials. I always
-                        have an open mind for new opportunities. Feel free to
-                        message me if you have any questions!
+						Hello! My name is Brad and I'm a Frontend Developer from Melbourne, Australia. I worked at a local games company for just under two years. Spending half my time there as a Unity Developer and the other half as a Frontend Developer working in React/React Native.
+					</InfoText>
+					<InfoText>
+						I enjoy other things other than development like fishing, snowboarding, traveling and Friday socials. I always have my eyes open for new opportunities. Please feel free to message me if you have any questions!
                     </InfoText>
                 </Wrapper>
             </InnerContainer>

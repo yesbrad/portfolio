@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Contianer = styled.div`
 	width: 100%;
-	padding: 3em;
+	padding: 2em;
 
 	/* @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
 		height: 800px;
@@ -35,33 +35,28 @@ export const Wrapper = styled.div`
 `;
 
 export const Image = styled.img`
-    width: 300px;
-    height: 300px;
+    width: 14rem;
+    height: 14rem;
     border-radius: 200px;
     border: 20px solid white;
-
-	@media screen and (max-width: ${props => props.theme.padWidth}px) {
-		width: 250px;
-    	height: 250px;
-    }
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 44px;
+    font-size: 3em;
     font-weight: 700;
     width: 100%;
-    color: white;
-	
-	@media screen and (min-width: ${props => props.theme.padWidth}px) {
-		max-width: 500px;
-    }
+	color: white;
+	margin-bottom: 10px;
 `;
 
 export const InfoText = styled.div`
     color: white;
-    /* border: 1px solid; */
+	/* border: 1px solid; */
+	font-size: 0.9rem;
+	margin-bottom: 15px;
+	font-weight: 300;
 
-	@media screen and (min-width: ${props => props.theme.padWidth}px) {
-		max-width: 500px;
+	@media screen and (min-width: ${props => props.theme.mobileWidth}px) {
+		padding-right: 6rem;
     }
 `;

@@ -7,14 +7,13 @@ export const Contianer = styled.div`
     height: auto;
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        border-radius: 0;
         flex-direction: column;
     }
 `;
 
 export const ColumnWrapper = styled.div`
     width: 100%;
-    padding: 3em;
+    padding: 2rem;
 
     ${props =>
         props.double &&
@@ -34,27 +33,24 @@ export const InfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 50px;
+    padding: 2rem;
     border-radius: 30px;
     background: linear-gradient(#ff512f, #dd2476);
-
-    @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        padding: 50px;
-    }
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
 	white-space: nowrap;
 `;
 
 export const MiniDescription = styled.div`
-    font-size: 18px;
+    font-size: 1rem;
     color: ${props => props.theme.midGray};
     margin-bottom: 50px;
     color: white;
+	font-weight: 300;
 `;
 
 export const ButtonWrapper = styled.div`

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { useSpring, animated } from "react-spring";
 
 export const Contianer = styled.div`
     display: flex;
@@ -15,12 +14,16 @@ export const Contianer = styled.div`
 
 export const ColumnWrapper = styled.div`
     width: 100%;
-    padding: 3em;
-    height: 900px;
+    padding: 1.5rem;
+    height: 60rem;
     flex: 1;
 
-    @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
-        height: 900px;
+	${props => props.main && `
+	    height: 38rem;
+	`};
+
+    @media screen and (min-width: ${props => props.theme.mobileWidth}px) {
+		height: 40rem;
     }
 `;
 
@@ -36,7 +39,7 @@ export const InfoWrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin: auto;
-    padding: 50px;
+    padding: 2rem;
     border-radius: 40px;
     background: linear-gradient(#ff512f, #dd2476);
     height: 100%;
@@ -50,7 +53,7 @@ export const InfoWrapper = styled.div`
     ${props =>
         props.second &&
         `
-		background: linear-gradient(#00EF60, #ABFF00);
+		background: linear-gradient(#11998e, #38ef7d);
 	`};
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
@@ -66,16 +69,17 @@ export const InfoWrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
 `;
 
 export const MiniDescription = styled.div`
-    font-size: 16px;
+    font-size: 1rem;
     color: ${props => props.theme.midGray};
     margin-top: 10px;
     color: white;
+	font-weight: 200;
 `;
 
 export const InformationText = styled.div`
@@ -83,6 +87,7 @@ export const InformationText = styled.div`
     color: ${props => props.theme.midGray};
     margin-top: 25px;
     color: white;
+	font-weight: 200;
 `;
 
 export const BannerWrapper = styled.div`
@@ -124,17 +129,21 @@ export const ButtonWrapper = styled.div`
     /* border: 1px solid; */
     flex-direction: row;
     justify-content: flex-end;
-    align-items: flex-end;
+	align-items: flex-end;
+
+	@media screen and (max-width: ${props => props.theme.mobileWidth}px) {
+		justify-content: center;
+	}
 `;
 
-export const ProjectInfo = styled(animated.div)`
+export const ProjectInfo = styled.div`
     color: ${props => props.theme.retroBlack};
     margin-top: 15px;
     max-width: 500px;
 `;
 
 export const PortfolioHeading = styled.div`
-    font-size: 55px;
+    font-size: 4rem;
     font-weight: 900;
     color: #444;
     height: 15%;

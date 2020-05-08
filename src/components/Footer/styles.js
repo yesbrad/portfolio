@@ -2,14 +2,14 @@ import styled from "styled-components";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 export const Contianer = styled.div`
-    height: 350px;
+    height: 450px;
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         flex-direction: column;
-        height: 550px;
+        height: 650px;
     }
 
-    padding: 3em;
+    padding: 2em;
     padding-bottom: 0px;
 `;
 
@@ -53,7 +53,7 @@ export const ColumnWrapper = styled.div`
 `;
 
 export const Title = styled.div`
-    font-size: 18px;
+    font-size: 1rem;
     color: white;
     font-weight: 700;
 `;
@@ -64,6 +64,7 @@ export const DesciptionLink = styled.a`
     font-weight: 100;
     cursor: pointer;
     transition: color ease-in-out 100ms;
+	font-size: 0.9rem;
 
     &:hover {
         color: white;
@@ -76,6 +77,7 @@ export const Copyright = styled.div`
     color: ${props => props.theme.midGray};
     margin: 5px 0;
     font-weight: 100;
+	font-size: 0.8rem;
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {
         align-self: center;

@@ -1,6 +1,5 @@
 import React from "react";
 import { Container } from "./styles";
-import NavigationBar from "../../components/NavigationBar";
 import BannerHeader from "../../components/BannerHeader";
 import FullHeading from "../../components/FullHeading";
 import Project from "../../components/Project";

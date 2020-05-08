@@ -15,15 +15,15 @@ const ExtraProjects = props => {
         <Contianer>
             <ColumnWrapper>
                 <InfoWrapper>
-                    <TitleWrapper>Extra Projects</TitleWrapper>
+                    <TitleWrapper>Github</TitleWrapper>
                     <MiniDescription>
-                        Heres a link to my github for some of the other smaller
-                        projects i've been tinkering on. There's also some of my
-                        Game stuff in there too.
+                        Here's a link to my github for some of the other smaller
+                        projects I tinker on. There's also some
+                        game stuff in there too.
                     </MiniDescription>
                     <ButtonWrapper>
                         <Button
-                            title="Github"
+                            title="Open Github"
                             onClick={() =>
                                 window.open("https://github.com/yesbrad")
                             }

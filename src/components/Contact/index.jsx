@@ -9,7 +9,8 @@ import {
     InputTitle,
     TextArea,
     Error,
-    Success
+    Success,
+	EmailWrapper
 } from "./styles";
 import Button from "../Button";
 import emailjs from "emailjs-com";
@@ -66,6 +67,7 @@ const Contact = props => {
         <Contianer>
             <Wrapper>
                 <TitleWrapper>Contact Me</TitleWrapper>
+				<EmailWrapper onClick={() => window.open("Mailto:b.bradfrancis@gmail.com")}>b.bradfrancis@gmail.com</EmailWrapper>
             </Wrapper>
             <Wrapper>
                 {!errors && <InputTitle>Your E-Mail:</InputTitle>}

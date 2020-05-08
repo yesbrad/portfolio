@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Contianer = styled.div`
     display: flex;
-    width: 100%;
+	width: 100%;
+	height: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     background: linear-gradient(#ff512f, #dd2476);
     border-radius: 30px;
-    padding: 50px;
+    padding: 2rem;
 
     @media screen and (max-width: ${props => props.theme.padWidth}px) {
         flex-direction: column;
@@ -34,11 +35,20 @@ export const Wrapper = styled.div`
 `;
 
 export const TitleWrapper = styled.div`
-    font-size: 44px;
+    font-size: 2rem;
     font-weight: 700;
     color: white;
 	white-space: nowrap;
 	overflow: hidden;
+`;
+
+export const EmailWrapper = styled.div`
+    font-size: 1rem;
+    font-weight: 200;
+    color: white;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: pointer;
 `;
 
 export const InfoText = styled.div``;

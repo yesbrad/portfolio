@@ -1,16 +1,12 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
-	height: 45px;
-	min-width: 150px;
+	height: 3rem;
+	min-width: 7rem;
 	background: white;
-	/* background: ${props =>
-        props.theme.dark ? props.theme.dark : props.theme.primary} */
-	/* border-radius: 500px; */
 	align-items: center;
 	justify-content: center;
 	display: flex;
-	/* transition: background 300ms ease-in-out; */
 	transition: transform  200ms ease-in-out, background 300ms ease-in-out, color 200ms;;
 	border-radius: 30px;
 	margin-right: 10px;
@@ -37,5 +33,6 @@ export const Container = styled.button`
 `;
 
 export const Text = styled.div`
-    color: inherit;
+	color: inherit;
+	font-size: 0.8rem;
 `;
