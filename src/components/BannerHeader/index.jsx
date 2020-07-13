@@ -70,7 +70,7 @@ const BannerHeader = props => {
 				</NavContianer>
                 <Wrapper>
                     <TitleWrapper size={1.3}>
-                        Frontend Developer
+                        React Developer
                     </TitleWrapper>
                     <TitleWrapper small size={0.9}>
                         Melbourne, Australia

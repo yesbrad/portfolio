@@ -41,19 +41,13 @@ export const InfoWrapper = styled.div`
     margin: auto;
     padding: 2rem;
     border-radius: 40px;
-    background: linear-gradient(#ff512f, #dd2476);
+    background: linear-gradient(${props => props.color1}, ${props => props.color2});
     height: 100%;
 
     ${props =>
         props.titlePort &&
         `
 		height: 85%;
-	`};
-
-    ${props =>
-        props.second &&
-        `
-		background: linear-gradient(#11998e, #38ef7d);
 	`};
 
     @media screen and (max-width: ${props => props.theme.mobileWidth}px) {

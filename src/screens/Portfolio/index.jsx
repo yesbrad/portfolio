@@ -22,7 +22,28 @@ const projects = [
             "Project takes advantage of technology such as Redux, Styled Components, Firebase and Apple IAP. The project also made me very fluent with Apples App Store Connect and uploading builds to the App Store.",
             "After release I worked on numerous updates providing new features and bug fixing. If you have any more questions feel free to send me a message below!"
         ],
-        titlePort: true
+		titlePort: true,
+		colors: [
+			"#ff512f",
+			"#dd2476"
+		]
+	},
+	{
+        title: "Odour-B-Gone",
+        miniDesc: "Odour-B-Gone is a leading cleaning brand in the Caravan Industry",
+        image: require("../../Images/Odourbgone.png"),
+        info: [
+			"Odour-B-Gone is a leading cleaning brand in the Caravan Industry.",
+			'This project I focused on trying to utilize React-Spring as much as I could for animation. It produced some really nice results',
+			'I also took advantage of CSS grid and SCSS',
+        ],
+		gitHub: "https://github.com/yesbrad/OdurBGone",
+		website: 'https://odourbgone.web.app/',
+        swapped: true,
+		colors: [
+			"#bc70ff",
+			"#ff70ec"
+		]
     },
     {
         title: "Award RV Scanner",
@@ -35,15 +56,19 @@ const projects = [
             "The Project took advantage of the React Native Camera package that detects barcodes in seconds. Then hands that of into the NETO database. If you have anymore questions send me a message!"
         ],
         gitHub: "https://github.com/yesbrad/awardticketscanner",
-        swapped: true,
-        second: true
-    }
+        swapped: false,
+		colors: [
+			"#11998e",
+			"#38ef7d"
+		]
+	},
+
 ];
 
 const Portfolio = props => {
     return (
         <Container>
-            <BannerHeader title="My name is Brad and im a Front End Developer!" />
+            <BannerHeader title="My name is Brad and I'm a Full Stack Developer!" />
             <section id="port"></section>
             {projects.map(i => (
                 <Project {...i} />

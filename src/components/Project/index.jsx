@@ -24,7 +24,9 @@ const Project = props => {
         swapped,
         titlePort,
         second,
-        gitHub
+		gitHub,
+		website,
+		colors
     } = props;
 
     const [isOpen, setOpen] = useState(false);
@@ -32,7 +34,7 @@ const Project = props => {
     const renderBannerInfo = () => (
         <ColumnWrapper>
             <BannerWrapper>
-                <InfoWrapper second={second} ab>
+                <InfoWrapper  color1={colors[0]} color2={colors[1]} second={second} ab>
                     <TitleWrapper>More Info</TitleWrapper>
                     {info.map(line => {
                         return <InformationText>{line}</InformationText>;
@@ -48,7 +50,7 @@ const Project = props => {
             {swapped && renderBannerInfo()}
             <ColumnWrapper main>
                 {titlePort && <PortfolioHeading>Portfolio</PortfolioHeading>}
-                <InfoWrapper titlePort={titlePort} second={second}>
+                <InfoWrapper color1={colors[0]} color2={colors[1]} titlePort={titlePort} second={second}>
                     <TitleWrapper>{title}</TitleWrapper>
                     <MiniDescription>{miniDesc}</MiniDescription>
                     <ButtonWrapper>
@@ -60,6 +62,12 @@ const Project = props => {
                             <Button
                                 title="App Store"
                                 onClick={() => window.open(url)}
+                            />
+						)}
+						{website && (
+                            <Button
+                                title="View"
+                                onClick={() => window.open(website)}
                             />
                         )}
                         {gitHub && (
